@@ -1,10 +1,18 @@
-💻 Atualizado em 18 de Julho de 2021 💻
+💻 Atualizado em 25 de Julho de 2021 💻
 
-# Desafio #2: Gestão de Cadastros - Como colocar uma loja online? Site Oficial / Landing page
+# Desafio #2: Gestão de Cadastros - Criação de um sistema e-commerce para inventário de produtos e dados de clientes
 
 ## Objetivo
 
-Criar um sistema de e-commerce para cadastro de email na landing page para recebimento de novidades e promoções.
+- Os dados de clientes, endereços e produtos devem estar devidamente estruturados;
+- Dados no localstorage;
+- Código fonte no github com o arquivo README detalhando as funcionalidades da programação;
+
+## Login
+
+| Usuário | Senha |
+| :-----: | :---: |
+|  admin  | admin |
 
 ## Link
 
