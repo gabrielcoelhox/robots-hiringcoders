@@ -22,8 +22,8 @@ https://gabrielcoelhox.github.io/qibon-hiringcoders/
 
 ## Home
 
-![IMG](github/img1.png)
+![GIF](github/animacao.gif)
 
 ## Demonstração Responsividade
 
-![GIF](github/animacao.gif)
+![GIF](github/animacao2.gif)
