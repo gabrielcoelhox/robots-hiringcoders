@@ -13,8 +13,7 @@ form.addEventListener('submit', (e) => {
 
     if (usuario === "admin" && senha === "admin") {
         window.location.replace("index.html");
-    }
-    else{
+    } else {
         alert("usuário e senha incorretos");
     }
 })

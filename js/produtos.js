@@ -109,19 +109,19 @@ function gerarTabela(){
     generateTable(table, listaProdutos);
 }
 
-function limparTabela(){
+function limparTabela() {
     let table = document.querySelector("table");
     table.innerHTML = "";
 }
 
-function excluirProduto(id){
+function excluirProduto(id) {
     let arr = JSON.parse(localStorage.getItem('produtos'));
     arr.splice(id, 1);
     let arrProd = JSON.stringify(arr)
     localStorage.setItem('produtos',arrProd);
 }
 
-function editarProd(id){
+function editarProd(id) {
     let arr = JSON.parse(localStorage.getItem('produtos'));
     let dados = arr[id];
     document.getElementById("nome").value = dados['nome'];
@@ -132,7 +132,7 @@ function editarProd(id){
     idEdicao = id;
 }
 
-function resetarForm(){
+function resetarForm() {
     document.getElementById("nome").value = '';
     document.getElementById("categoria").value = '';
     document.getElementById("valor").value = '';

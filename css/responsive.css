@@ -10,6 +10,7 @@ html {
         flex-direction: column;
         text-align: center;
     }
+
     main .list-cadastro{
         margin-left: 0;
         margin-top: 20px;
@@ -27,13 +28,11 @@ html {
 
     .one,
     .two,
-    .three
-     {
+    .three {
         background-color: #000;
         height: 5px;
         width: 100%;
         margin: 6px auto;
-
         transition-duration: 0.3s;
     }
 
@@ -44,7 +43,6 @@ html {
         cursor: pointer;
     }
 
-    /* fullscreen */
     .menu-section.on {
         position: absolute;
         top:0;
@@ -96,5 +94,4 @@ html {
         display: block;
         
     }
-
 }
