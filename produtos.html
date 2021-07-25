@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot - Produtos</title>
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 768px)" />
+    <script src="https://kit.fontawesome.com/ab74162177.js" crossorigin="anonymous"></script>
+</head>
+<body onload="gerarTabela();"> 
+    <script type="text/javascript">
+        const login = JSON.parse(localStorage.getItem('login'));
+        if ((login != null) && (login['usuario'] === "admin" && login['senha'] === "admin")) {
+            /*console.log("login ok")*/
+        } else{
+            window.location.replace("login.html");
+        }
+    </script>
+    <header>
+        <div class="container">
+            <a href="/">
+                <img src="./images/logo.svg" alt="rocker.store"/>
+            </a> 
+            <div class="menu-section">
+                <div class="menu-toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div> 
+                <nav>
+                    <ul>
+                        <li><a href="index.html">dashboard</a></li>
+                        <li><a href="clientes.html">clientes</a></li>
+                        <li><a href="#">produtos</a></li>
+                        <li><a onclick="limparDados();" href="#">sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="form-cadastro">
+            <form id="form-produtos">
+                <h2>Cadastrar produto</h2>
+                <input type="text" placeholder="Nome" id="nome">
+                <input type="text" placeholder="Categoria" id="categoria">
+                <input type="float" placeholder="Valor" id="valor">
+                <button onclick="cadastrarProduto(); gerarTabela();" type="submit" id="botao">cadastrar</button>
+            </form>
+        </div>
+        <div class="list-cadastro">
+            <h2>Produtos Cadastrados</h2>
+            <table style="width:100%"></table>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Este é um projeto para o Hiring Coders. Todos os direitos reservados.</p>
+    </footer>
+    <!-- FIM FOOTER -->
+
+    <script src="./js/menu.js"></script>
+</body>
+<script src="js/dashboard.js"></script>
+<script src="js/produtos.js"></script>
+</html>

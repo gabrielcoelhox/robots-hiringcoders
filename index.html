@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot</title>
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 768px)" />
+    <script src="https://kit.fontawesome.com/ab74162177.js" crossorigin="anonymous"></script>
+</head>
+<body onload="totalProdutos(); totalClientes();">
+    <script type="text/javascript">
+        const login = JSON.parse(localStorage.getItem('login'));
+        if ((login != null) && (login['usuario'] === "admin" && login['senha'] === "admin")) {
+        } else {
+            window.location.replace("login.html");
+        }
+    </script>
+<header>
+    <div class="container">
+        <a href="/"><img src="images/logo.svg" alt="robot"/></a> 
+        <div class="menu-section">
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div> 
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a onclick="limparDados();" href="#">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+    <main>
+        <div class="dashboard">
+            <h1>Dashboard</h1>
+            <h2>Total de Clientes: <span id="total-clientes"></span></h2>
+            <h2>Total de Produtos: <span id="total-produtos"></span></h2>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Este é um projeto para o Hiring Coders. Todos os direitos reservados.</p>
+    </footer>
+    <!-- FIM FOOTER -->
+
+    <script src="./js/menu.js"></script>
+</body>
+<script src="js/dashboard.js"></script>
+</html> 

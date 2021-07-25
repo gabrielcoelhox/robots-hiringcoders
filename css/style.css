@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+}
+  
+html,
+body {
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;   
+    margin: auto;
+    background-color: rgb(241, 155, 139);
+}
+
+header nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+  
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 2em;
+    margin-right: 20px; 
+    display: flex;
+    transition: all .3s;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover{
+    color: #133B4F;
+}
+
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+header a {
+    padding: 5px 20px;
+}
+
+/* MAIN */
+main {
+    background-color: #FFF;
+    height: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 7.5rem;
+    color: #133B4F;
+    text-transform: uppercase;
+}
+
+main h2 {
+    font-size: 7.5em;
+    color: #F19B8B;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: bold;
+}
+
+main input{
+    height: 35px;
+    width: 220px;    
+    padding-bottom: 1.5rem;
+    border: 2px solid #000;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 12px;
+    margin: 10px;
+}
+
+main .text-main {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+main .form-main {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 54px 20px;
+}
+
+button {
+    width: 120px;
+    height: 35px;
+    background-color: #02d9ff00;
+    color: #000;
+    border: 1px solid #000;
+    font-weight: bold;
+    border-radius: 50px;
+    align-items: center;
+    cursor:pointer;
+    margin-top: 5px;
+    font-size: 1.5em;
+}
+
+button:hover{
+    background-color: #000;
+    color: #fff;
+    transition: .4s;
+}
+
+main .dashboard h1 {
+    font-size: 5.5rem;
+    color: #133B4F;
+    text-transform: uppercase;
+}
+
+main .dashboard h2 {
+    font-size: 3.5rem;
+    color: #F19B8B;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main .form-cadastro {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    border: 1px solid #000;
+    padding: 20px 20px;
+}
+
+main .form-cadastro input{
+    height: 35px;
+    width: 300px;    
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+main .form-cadastro h2{
+    font-size: 3em;
+    color: #133B4F;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+main .list-cadastro {
+    margin-left: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
+main .list-cadastro h2{
+    font-size: 2.5rem;
+    color: #133B4F;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main .list-cadastro table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    font-size: 1.15em;
+}
+
+main .list-cadastro th {
+    background-color: #F19B8B;
+    color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+} 
+
+.list-cadastro a {
+     color: black;
+} 
+
+footer{
+    background: rgb(241, 155, 139);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;   
+    margin: auto;
+    height: 59px;
+}
+
+footer p{
+    padding: 10px 0;
+    font-size: 1.35em; 
+    color: #FFF;
+}
